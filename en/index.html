@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <script src="/assets/libraries/jquery-3.7.1.min.js"></script>
+        
         <title>biernacik.org - Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
+        <meta name="description" content="Tech enthusiast and self taught web developer.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Web Development">
+        <meta name="author" content="Jan Biernacik">
         <link rel="stylesheet" href="/assets/styles/index.css" />
         <link rel="stylesheet" href="/assets/styles/classes.css" />
         <link rel="stylesheet" href="/assets/styles/media.css" />
@@ -13,35 +18,33 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="biernacik.org" />
         <link rel="manifest" href="/assets/media/site.webmanifest" />
+        <link rel="canonical" href="https://biernacik.org/en" />
         <script src="/assets/scripts/index.js"></script>
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
     </head>
     <body>
         <header>
-            <div class="navbar">
-                <div class="navbar-item-container">
-                    <div class="navbar-items-left">
-                        <img class="menu-toggle" src="/assets/media/menu_dark.png" onclick="toggleMenu();" />
-                        <a href="/" class="navbar-link">Home</a>
-                    </div>
-                    <div class="navbar-items-right">
-                        <a href="https://www.github.com/JBNCK" class="navbar-contact-link">GitHub</a>
-                    </div>
-                </div>
-            </div>
+            <div class="navbar"></div>
         </header>
-        <div class="menu" id="menu">
-            <div class="menu-content" id="menuContent">
-                <a href="/" class="menu-link">Home</a>
-            </div>
-        </div>
+        <div class="menu" id="menu"></div>
         <div class="menu-collapser" id="menuCollapser" onclick="toggleMenu();"></div>
-        <div class="site-beginning"></div>
-        <main>
+        <div class="page-content">
+            <div class="site-beginning"></div>
+        <main id="main" class="main">
             <div class="main-section">
                 <h1 class="main-section-title">biernacik.org</h1>
-                <p>This site is currently under construction.</p>
+                <p>This website is currently unused. Please visit my <a href="https://janbiernacik.com">personal website</a>.</p>
             </div>
         </main>
+        <footer>
+            <div class="main-section">
+                <a class="ajax-button" href="/en/privacy/">Privacy Policy</a><br>
+                <a href="/de">Deutsche Version</a>
+            </div>
+        </footer>
         <div class="site-end"></div>
+        </div>
     </body>
 </html>

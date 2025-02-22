@@ -1,10 +1,9 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
     .main-banner {
         flex-direction: column-reverse;
     }
     .main-banner-picture {
         width: 70%;
-        max-width: 512px;
         margin: 0;
     }
     .navbar-link {
@@ -15,11 +14,30 @@
     }
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 801px) {
     .menu {
-        visibility: hidden;
+        display: none;
     }
     .menu-collapser {
         display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        --background: #000000;
+        --text: #dddddd;
+        --accent: #3080ff;
+        --background-alt: #252525;
+        --background-alt2: #252525;
+        --background-alt3: #121212;
+        --border: #707070;
+    }
+    img {
+        filter: brightness(0.85);
+    }
+    .repo-list-item {
+        background-color: var(--background-alt3);
+        box-shadow: none;
     }
 }
